@@ -12,7 +12,7 @@ const run = async () => {
     const commentUser = github.context.payload.comment.user.login;
     const commentBody = github.context.payload.comment.body;
 
-    if (commentBody.include("pick me")) {
+    if (commentBody.includes("pick me")) {
         if (!issue) {
             throw new Error(`Couldn't find issue info in current context`);
         }
