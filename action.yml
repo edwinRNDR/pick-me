@@ -1,0 +1,9 @@
+name: 'Pick me'
+description: 'Auto-assigns issues to person when "pick me" is written in issue comment'
+runs:
+    using: 'node12'
+    main: 'src/index.js'
+
+branding:
+    icon: 'alert-circle'
+    color: 'red'
